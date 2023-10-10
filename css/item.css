@@ -259,6 +259,7 @@ header{
     font-style: var(--font-medium);
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
+    border-style: none;
 
 
 }
