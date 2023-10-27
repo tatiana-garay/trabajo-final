@@ -143,8 +143,7 @@ header{
 
 /*FIN DEL HEADER */
 
-
-#create {
+.crear{
     margin: var(--spacing-68) auto;
     display: flex;
     flex-direction: column;
@@ -153,13 +152,14 @@ header{
     gap: var(--spacing-36);
 }
 
-.create__title {
+.crear-title{
     font-family: var(--base-font);
     font-size: var(--font-jumbo);
     font-weight: 700;
 }
 
-.create__form {
+
+.crear-form{
     max-width: 990px;
     display: flex;
     flex-direction: column;
@@ -167,6 +167,7 @@ header{
     align-items: stretch;
     gap: var(--spacing-68);
 }
+
 
 .form__box--grid {
     display: grid;
@@ -273,25 +274,50 @@ textarea::placeholder {
 }
 
 
-.edit__form {
-    max-width: 990px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: var(--spacing-36);
+
+
+
+.edit__img {
+    max-width: 150px;
+    padding-bottom: var(--spacing-8);
 }
 
-
-
-
-
-iconify-icon {
-    color: var(--dark-bg-solid);
+.edit__img-side {
     font-size: var(--font-small);
-    font-weight: 700;
+    text-align: center;
+    padding-top: var(--spacing-8);
+    border-top: 2px solid var(--primary-solid);
+    font-weight: 600;
 }
 
+
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+/* COLORS */
+
+.btn--primary {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    transition: background 0.2s ease-in-out;
+}
+
+.btn--primary:hover {
+    background-color: var(--secondary-solid);
+}
+
+/* SIZES */
+
+.btn--medium {
+    padding: var(--spacing-8) var(--spacing-16);
+}
+
+.btn--large {
+    padding: var(--spacing-12) var(--spacing-28);
+}
 
 
 
