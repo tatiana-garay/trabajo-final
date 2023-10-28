@@ -216,52 +216,59 @@ header{
     font-size: var(--font-jumbo);
 }
 
-.item-buttom{
+
+.item__cart {
     display: flex;
-    gap: var(--spacing-12);
+    gap: var(--spacing-16);
 }
 
-.item-agregar{
-    width: 105.47px;
-    height: 35.24px;
-    top: 565.95px;
-    left: 726.75px;
-    border: 0.5px;
-    border: 0.5px solid rgba(201, 201, 201, 1)
-
-}
-
-.boton{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    
-}
-
-.item__button{
-    width: 18px;
-    height: 16px;
-    top: 585.14px;
-    left: 841px;
-    text-align: center;
-    padding: 4px, 0px, 4px, 0px;
-    background: rgba(79, 79, 79, 1);
-    color: rgba(255, 255, 255, 1);
-}
-
-.item__agregar{
-    width: 181px;
-    height: 37.91px;
-    top: 565.57px;
-    left: 888.33px;
-    background: var(--primary-solid);
-    font-family: var(--base-font);
-    font-style: var(--font-medium);
-    color: rgba(255, 255, 255, 1);
+.item__cart .item__quantity {
+    background-color: var(--dark-bg-solid);
+    color: var(--ligth-font-solid);
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    border: none;
     cursor: pointer;
-    border-style: none;
+}
 
+.item__cart .item__input {
+    font-size: var(--font-large);
+    padding: 6px var(--spacing-16);
+    text-align: center;
+    max-width: 70px;
+}
 
+.item__cart .item__submit {
+    font-size: var(--font-medium);
+}
+
+/* BUTTONS STYLES */
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+/* COLORS */
+
+.btn--primary {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    transition: background 0.2s ease-in-out;
+}
+
+.btn--primary:hover {
+    background-color: var(--secondary-solid);
+}
+
+/* SIZES */
+
+.btn--medium {
+    padding: var(--spacing-8) var(--spacing-16);
+}
+
+.btn--large {
+    padding: var(--spacing-12) var(--spacing-28);
 }
 
 .item-promos{
@@ -285,9 +292,19 @@ header{
     text-transform: uppercase; /*MAYUSCULAS*/
 }
 
-.slider__items{
-    display: flex;
-    gap: var(--spacing-24); 
+
+iconify-icon{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.glide__arrow--left{
+    left: 0;
+}
+
+.glide__arrow--right{
+    right: 0;
 }
 
 .card-item__cover{
